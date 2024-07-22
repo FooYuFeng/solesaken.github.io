@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: black; 
+  color: white;
+}
+h1{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.page{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  position:relative; 
+  width:95vw;
+  margin-bottom: 100px;
+}
+.menuHide{
+  display: block;
+}
+.whiteSpace{
+  background-color: rgb(45, 45, 45);
+  width: 100%;
+  height: 5px;
+}
+.buttonActive, .buttonActive:hover, .buttonActive:active{
+  background-color: rgb(45, 45, 45);
+  text-decoration: underline;
+  opacity: 1;
+}
+.menuActive, .menuActive:hover, .menuActive:active{
+  background-color: rgb(45, 45, 45);
+  opacity: 1;
+}
+.textbox{
+  font-size: 20px;
+  color: rgb(220, 220, 220);
+}
+.playfieldblock{
+  display: inline;
+}
+.gridpagestyle{
+  display: grid;
+  grid-template-columns: auto 99fr;
+}
+.gridpagestyle .textbox {
+  margin-left: 30px;
+  display: flex;
+}
+.imagepagestyle{
+  width: 450px;
+  height: 280px;
+}
+.aligncenterstyle{
+  align-self: center;
+}
+nav button{
+  font-size: 30px; 
+  width: 260px; 
+  height: 50px; 
+  font-weight: bold; 
+  background-color: transparent; 
+  background-repeat: no-repeat; 
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+nav button:hover, nav button:active{
+  background-color: rgb(45, 45, 45);
+  opacity: 1;
+}
+ul{
+  display:block;
+  z-index: 1
+}
+ul li{
+  display:inline;
+}
+.playfieldcrosshair{
+  background: transparent;
+  width:20px;
+  height:20px;
+  position:relative;
+  left:inherit; 
+  top:inherit;
+}
+.playfield{
+  position:relative;
+  border: solid 2px;
+  border-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.playfieldtarget{
+  position:absolute;
+  background-color: transparent;
+  left: 500px; 
+  top: 250px;
+  width: 50px;
+  height: 50px;
+}
+.playfieldbow{
+  position:absolute;
+  background-color: transparent;
+  left: 40px; 
+  bottom: 10px;
+  width: 20px;
+  height: 70px;
+}
+.playfieldarrow{
+  position:absolute;
+  background: transparent;
+  background-color: transparent;
+  left: 20px; 
+  bottom: 38px;
+  width: 60px;
+  height: 14px;
+}
+.playfieldarrowstyle{
+  position:absolute;
+  background: transparent;
+  background-color: transparent;
+  width: inherit;
+  height: inherit;
+}
+.playfieldarrowhitbox{
+  position:absolute;
+  border-radius:50%;
+  left: 56px; 
+  bottom: 7px;
+  width: 1px;
+  height: 1px;
+}
+.playfieldMenu button{
+  font-size: 20px; 
+  width: 246px; 
+  height: 40px; 
+  font-weight: bold; 
+  background-color: rgb(45, 45, 45);
+  background-repeat: no-repeat; 
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.playfieldMenu button:hover, .playfieldbutton button:active{
+  background-color: rgb(75, 75, 75);
+  opacity: 1;
+}
+#menuButton{
+  display:none;
+}
+@media screen and (max-width:800px){
+  nav button{/*make a menu items vertical*/
+    width:100vw
+  }
+  nav button:hover, nav button:active{
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  ul{/*hide the menu item list*/
+    display:none;
+  } 
+  ul li{
+    display:block;
+  }
+  .playfield{
+    zoom: 0.65;
+  }
+  .playfieldblock{
+    display: flex;
+    flex-direction: column;
+  }
+  .playfieldblock button{
+    margin-top: 5px;
+  }
+  .gridpagestyle{
+    display: inline;
+    grid-template-columns: auto 99fr;
+  }
+  .gridpagestyle .textbox {
+    margin-left: 0px;
+    display: flex;
+  }
+  #menuButton{/* unhide menu icon */
+    display:block;
+  } 
+}
