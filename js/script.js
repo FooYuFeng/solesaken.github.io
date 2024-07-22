@@ -164,10 +164,10 @@ function moveCrosshairToInteract(interactionPosX, interactionPosY)
 
             var playfieldselectortarget = document.querySelector(".playfieldtarget");
 
-            if (getComputedStyle(varqueryplayfield).getPropertyValue('zoom') == '0.65')
+            if (getComputedStyle(varqueryplayfield).getPropertyValue('zoom') == '0.5')
             {
-                interactionPosX /= 0.65;
-                interactionPosY /= 0.65;
+                interactionPosX /= 0.5;
+                interactionPosY /= 0.5;
             }
 
             if (interactionPosX >= playfieldselector.left && interactionPosY >= playfieldselector.top && interactionPosX <= playfieldselector.right && interactionPosY <= playfieldselector.bottom)

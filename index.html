@@ -20,7 +20,7 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>    
-    <nav>
+    <nav class="scrollingElement">
         <button id="menuButton">|||</button>
         <ul>
             <li><button class="inMenuButtons" id="page1btn">About</button></li>
@@ -30,6 +30,7 @@
         <div class="whiteSpace"></div>
     </nav>
     <br>
+    <div class="navspacing"></div>
     <div id="pagecontainer">
         <div class="page" id="page1">
             <header>
@@ -149,6 +150,9 @@
                 <h1>Simulation of archery</h1>
             </header>
 
+            <div class="textbox">
+                <b>Click on playfield - aim / place</b>
+            </div>
             <div class="playfield" id="playfield">
                 <img src="images/target.png" alt="playfieldtargetimage" class="playfieldtarget" id="playfieldtarget">
                 <img src="images/crosshair.png" alt="playfieldcrosshairimage" class="playfieldcrosshair" id="playfieldcrosshair">
@@ -159,16 +163,12 @@
                 </div>
             </div>
             <div class="playfieldMenu">
-                <br>
-                <div class="textbox">
-                    <b>Click on playfield - aim / place</b>
-                </div>
-                <br>
                 <div class = "playfieldblock">
                     <button id="shotbutton">Shot</button>
                     <button id="resetbutton">Reset</button>
                     <button id="settargetposbutton">Set Target Position</button>
                 </div>
+                <br>
             </div>
 
 

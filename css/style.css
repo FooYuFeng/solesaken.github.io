@@ -14,7 +14,7 @@ h1{
   margin-right: auto;
   margin-top: 0px;
   position:relative; 
-  width:95vw;
+  width:85vw;
   margin-bottom: 100px;
 }
 .menuHide{
@@ -43,11 +43,14 @@ h1{
 }
 .gridpagestyle{
   display: grid;
-  grid-template-columns: auto 99fr;
+  grid-template-columns: 1fr 99fr;
 }
 .gridpagestyle .textbox {
   margin-left: 30px;
   display: flex;
+}
+.navspacing{
+  margin-top: -11px;
 }
 .imagepagestyle{
   width: 450px;
@@ -137,9 +140,12 @@ ul li{
   width: 1px;
   height: 1px;
 }
+.playfieldMenu{
+  margin-top: 5px;
+}
 .playfieldMenu button{
   font-size: 20px; 
-  width: 246px; 
+  width: 220px; 
   height: 40px; 
   font-weight: bold; 
   background-color: rgb(45, 45, 45);
@@ -154,6 +160,10 @@ ul li{
 .playfieldMenu button:hover, .playfieldbutton button:active{
   background-color: rgb(75, 75, 75);
   opacity: 1;
+}
+.scrollingElement{
+  position: relative;
+  z-index: 1;
 }
 #menuButton{
   display:none;
@@ -172,8 +182,15 @@ ul li{
   ul li{
     display:block;
   }
+  .navspacing{
+    margin-top: 50px;
+  }
+  .imagepagestyle{
+    width: 300px;
+    height: 180px;
+  }
   .playfield{
-    zoom: 0.65;
+    zoom: 0.5;
   }
   .playfieldblock{
     display: flex;
@@ -182,6 +199,9 @@ ul li{
   .playfieldblock button{
     margin-top: 5px;
   }
+  .playfieldMenu{
+    margin-top: 0px;
+  }
   .gridpagestyle{
     display: inline;
     grid-template-columns: auto 99fr;
@@ -189,6 +209,10 @@ ul li{
   .gridpagestyle .textbox {
     margin-left: 0px;
     display: flex;
+  }
+  .scrollingElement{
+    position: fixed;
+    z-index: 1;
   }
   #menuButton{/* unhide menu icon */
     display:block;
