@@ -1,0 +1,95 @@
+Title: Archery
+Subtopic: What is archery, how to be an archer and have fun.
+Interactivity: Simulator of using a bow to shot arrow.
+
+
+//Validator HTML
+https://validator.w3.org/
+
+//Validator CSS
+https://jigsaw.w3.org/css-validator/
+
+//Validator JAVASCRIPT
+https://beautifytools.com/javascript-validator.php
+
+
+//Archer Research
+https://www.worldarchery.sport/sport/history#:~:text=Archery%20became%20obsolete%20in%20warfare,to%201908%20and%20in%201920.
+https://en.wikipedia.org/wiki/Archery
+https://www.britannica.com/sports/archery/Equipment
+https://www.hattila.com/en/content/31-a-guide-to-the-different-types-of-bows
+https://study.com/academy/lesson/archery-skills-rules-techniques.html#:~:text=Archery%20is%20a%20bow%20and,circle%20the%20bow%20lands%20in.
+https://www.worldarchery.sport/sport#:~:text=In%20modern%20times%2C%20archery%20is,the%20programme%20permanently%20in%201972.
+
+//Singapore Prohibited/Controlled/Dutiable Goods
+https://www.ica.gov.sg/enter-transit-depart/entering-singapore/what-you-can-bring/prohibited-controlled-dutiable-goods
+
+//Locations
+https://www.smartsinga.com/top-archery-ranges-singapore/
+
+//Sprite
+Crosshair:
+https://kaboff.itch.io/160-cursors-crosshairs-pack-32x32
+
+Bow and Arrows:
+https://opengameart.org/content/bow-set
+
+QRCode:
+https://www.qr-code-generator.com/
+
+//Audio
+https://pixabay.com/sound-effects/arrow-hitting-target-83810/
+
+
+
+//Code: (order from newest to oldest)
+Change negative number into positive:
+https://stackoverflow.com/questions/4652104/convert-a-negative-number-to-a-positive-one-in-javascript
+
+Changing element's text into somthing else:
+https://www.w3schools.com/js/js_htmldom_html.asp
+
+Stopping and playing audio at certain timing:
+https://stackoverflow.com/questions/14834520/html5-audio-stop-function
+
+Playing Audio:
+https://stackoverflow.com/questions/9419263/how-to-play-audio
+
+Wait for seconds before excuteing a code:
+https://byby.dev/js-wait-n-seconds
+
+Check if element contains a certain class:
+https://stackoverflow.com/questions/5898656/check-if-an-element-contains-a-class-in-javascript
+
+Getting CSS values:
+https://stackoverflow.com/questions/6338217/get-a-css-value-with-javascript
+
+Setting child's position to be fixed at bottom left:
+https://techstacker.com/put-elements-bottom-container-css/#:~:text=HTML%20has%20a%20parent%2Dchild,position%3A%20absolute%3B%20(child)
+
+Math refrence to rotate elements facing to interacted position using atan:
+https://stackoverflow.com/questions/63512858/rotate-div-based-on-mouse-position
+
+Rotation of elements:
+https://www.dynamsoft.com/codepool/how-to-rotate-image-with-javascript.html
+
+Hide element going out of div area:
+https://stackoverflow.com/questions/4328625/avoid-an-image-to-go-outside-a-div
+
+Setting Interval function into var for toggle update:
+https://www.w3schools.com/jsref/met_win_setinterval.asp
+
+Keycode Tables:
+https://www.toptal.com/developers/keycode/table
+
+Button Style and Effects:
+https://www.w3schools.com/css/css3_buttons.asp
+
+Center Block/Images/Classes:
+https://www.w3schools.com/css/css_align.asp
+
+Getting mouse position on click:
+https://stackoverflow.com/questions/23744605/javascript-get-x-and-y-coordinates-on-mouse-click
+
+Getting touch position on touch:
+https://stackoverflow.com/questions/41993176/determine-touch-position-on-tablets-with-javascript
