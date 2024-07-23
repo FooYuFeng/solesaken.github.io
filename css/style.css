@@ -1,14 +1,17 @@
-* {
+/* All elements settings */
+*{
   margin: 0;
   padding: 0;
   border: 0;
   background-color: black; 
   color: white;
 }
+/* header text style */
 h1{
   margin-top: 6px;
   margin-bottom: 6px;
 }
+/* page style */
 .page{
   margin-left: auto;
   margin-right: auto;
@@ -17,52 +20,65 @@ h1{
   width:85vw;
   margin-bottom: 100px;
 }
+/* menu hide toggler */
 .menuHide{
   display: block;
 }
+/* line spacing content */
 .whiteSpace{
   background-color: rgb(65, 65, 65);
   width: 100%;
   height: 5px;
 }
+/* button styles for onactivated */
 .buttonActive, .buttonActive:hover, .buttonActive:active{
   background-color: rgb(65, 65, 65);
   text-decoration: underline;
   opacity: 1;
 }
+/* button styles for menu */
 .menuActive, .menuActive:hover, .menuActive:active{
   background-color: rgb(65, 65, 65);
   opacity: 1;
 }
+/* text styles */
 .textbox, .textbox b{
   font-size: 20px;
   color: rgb(220, 220, 220);
 }
-.playfieldblock{
-  display: inline;
-}
+/* page grid style */
 .gridpagestyle{
   display: grid;
   grid-template-columns: 1fr 99fr;
 }
+/* text style in gridpage content */
 .gridpagestyle .textbox {
   margin-left: 30px;
   display: flex;
 }
+/* header2 text and link style in gridpage content */
 .gridpagestyle h2, .gridpagestyle a {
   text-decoration: none;
   color: rgb(220, 220, 220);
 }
+/* spacing between nav and the pages */
 .navspacing{
   margin-top: -11px;
 }
+/* image style */
 .imagepagestyle{
   width: 450px;
   height: 280px;
 }
+/* align style, extra class */
 .aligncenterstyle{
   align-self: center;
 }
+/* bold style, extra class to prevent <b> conflits */
+.boldtext{
+  font-weight: bold;
+}
+/* navigate button style */
 nav button{
   font-size: 30px; 
   width: 236px; 
@@ -77,31 +93,30 @@ nav button{
   opacity: 0.6;
   transition: 0.3s;
 }
+/* navigate button style on active and hover */
 nav button:hover, nav button:active{
   background-color: rgb(65, 65, 65);
   opacity: 1;
 }
+/* navigate button style for fullscreen button */
 nav .fsbutton{
   width: 80px;
 }
+/* dropdownlist style from menu button */
 ul{
   display:block;
   z-index: 1
 }
+/* dropdownlist button style from menu button */
 ul li{
   display:inline;
 }
-.boldtext{
-  font-weight: bold;
+/* menu scrolling style */
+.scrollingElement{
+  position: relative;
+  z-index: 1;
 }
-.playfieldcrosshair{
-  background: transparent;
-  width:20px;
-  height:20px;
-  position:relative;
-  left:inherit; 
-  top:inherit;
-}
+/* playfield style in simulation */
 .playfield{
   position:relative;
   border: solid 2px;
@@ -110,6 +125,20 @@ ul li{
   height: 400px;
   overflow: hidden;
 }
+/* playfield hitbox style */
+.playfieldblock{
+  display: inline;
+}
+/* crosshair style in playfield */
+.playfieldcrosshair{
+  background: transparent;
+  width:20px;
+  height:20px;
+  position:absolute;
+  left:inherit; 
+  top:inherit;
+}
+/* target object style in playfield */
 .playfieldtarget{
   position:absolute;
   background-color: transparent;
@@ -118,6 +147,7 @@ ul li{
   width: 50px;
   height: 50px;
 }
+/* bow style in playfield */
 .playfieldbow{
   position:absolute;
   background-color: transparent;
@@ -126,6 +156,7 @@ ul li{
   width: 20px;
   height: 70px;
 }
+/* arrow group style in playfield */
 .playfieldarrow{
   position:absolute;
   background: transparent;
@@ -135,6 +166,7 @@ ul li{
   width: 60px;
   height: 14px;
 }
+/* arrow style in playfield */
 .playfieldarrowstyle{
   position:absolute;
   background: transparent;
@@ -142,6 +174,7 @@ ul li{
   width: inherit;
   height: inherit;
 }
+/* arrow's hitbox style in playfield */
 .playfieldarrowhitbox{
   position:absolute;
   border-radius:50%;
@@ -150,9 +183,19 @@ ul li{
   width: 1px;
   height: 1px;
 }
+/* accuracy text style in playfield */
+.accuracyPoints{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 4px;
+  font-size: 24px;
+  color: rgb(200, 200, 200);
+}
+/* playfield menu style in simulation */
 .playfieldMenu{
   margin-top: 5px;
 }
+/* playfield menu buttons style in simulation */
 .playfieldMenu button{
   font-size: 20px; 
   width: 220px; 
@@ -167,65 +210,76 @@ ul li{
   opacity: 0.6;
   transition: 0.3s;
 }
+/* playfield menu buttons on hover and active style in simulation */
 .playfieldMenu button:hover, .playfieldbutton button:active{
   background-color: rgb(95, 95, 95);
   opacity: 1;
 }
-.scrollingElement{
-  position: relative;
-  z-index: 1;
-}
+/* menu button style for this specific button */
 #menuButton{
   display:none;
 }
 @media screen and (max-width:800px){
-  nav button, nav .fsbutton{/*make a menu items vertical*/
+  /* make a menu items vertical by filling all width and pushing the other buttons down on smaller screen */
+  nav button, nav .fsbutton{
     width:100vw
   }
   nav button:hover, nav button:active{
     background-color: transparent; 
     text-decoration: none;
   }
-  ul{/*hide the menu item list*/
+  /* hide the menu item list on smaller screen */
+  ul{
     display:none;
-  } 
+  }
+  /* make a menu items hitbox into box shape on smaller screen */
   ul li{
     display:block;
   }
+  /* menu scrolling style on smaller screen */
+  .scrollingElement{
+    position: fixed;
+    z-index: 1;
+  }
+  /* spacing between nav and the pages on smaller screen */
   .navspacing{
     margin-top: 50px;
   }
+  /* image style on smaller screen */
   .imagepagestyle{
     width: 300px;
     height: 180px;
     border: 0px;
   }
-  .playfield{
-    zoom: 0.5;
-  }
-  .playfieldblock{
-    display: flex;
-    flex-direction: column;
-  }
-  .playfieldblock button{
-    margin-top: 5px;
-  }
-  .playfieldMenu{
-    margin-top: 0px;
-  }
+  /* page grid style on smaller screen */
   .gridpagestyle{
     display: inline;
     grid-template-columns: auto 99fr;
   }
+  /* text style in gridpage content on smaller screen */
   .gridpagestyle .textbox {
     margin-left: 0px;
     display: flex;
   }
-  .scrollingElement{
-    position: fixed;
-    z-index: 1;
+  /* playfield style in simulation on smaller screen */
+  .playfield{
+    zoom: 0.5;
   }
-  #menuButton{/* unhide menu icon */
+  /* playfield hitbox style on smaller screen */
+  .playfieldblock{
+    display: flex;
+    flex-direction: column;
+  }
+  /* playfield button style on smaller screen */
+  .playfieldblock button{
+    margin-top: 5px;
+  }
+  /* playfield menu style in simulation on smaller screen */
+  .playfieldMenu{
+    margin-top: 0px;
+  }
+  /* unhide specific menu icon on smaller screen */
+  #menuButton{
     display:block;
   } 
 }
