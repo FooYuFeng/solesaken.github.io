@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2</title>
+    <title>About Archery</title>
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Icons/favicon-16x16.png">
     <!--for android-->
-    <link rel="manifest" href="Icons/site.webmanifest" />
+    <link rel="manifest" href="Icons/site.webmanifest">
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
@@ -26,11 +26,12 @@
             <li><button class="inMenuButtons" id="page1btn">About</button></li>
             <li><button class="inMenuButtons" id="page2btn">Getting Started</button></li>
             <li><button class="inMenuButtons" id="page3btn">Simulation</button></li>
+            <li><button class="fsbutton" id="goFS">[  ]</button></li>
         </ul>
         <div class="whiteSpace"></div>
     </nav>
     <br>
-    <div class="navspacing"></div>
+    <div class="navspacing"></div>    
     <div id="pagecontainer">
         <div class="page" id="page1">
             <header>
@@ -38,13 +39,25 @@
             </header>
             <div class="gridpagestyle">
                 <div>
-                    <img class="imagepagestyle" src="images/archerimage.jpg" alt="archerImage">
+                    <img class="imagepagestyle" src="images/maximilian_1470.png" alt="archerHistoryImage">
                 </div>
                 <div class="textbox">
                     Archery is someone who is using a bow and arrows to shot the target, they can also be called an archer, bowman or toxophilite.
                     Toxophilite means a lover or devotee of archery.
-                    Archery was used in the history for hunting and during combat, in modern times,
-                    it is seen as a competitive sport and recreational activity.
+                    Archery was used in the history for hunting and during combat, with the earliest evidence dates back around 20,000 BC, which is at least 40,000 years old.
+                </div>
+            </div>
+            <br>
+            <div class="whiteSpace"></div>
+            <h1>How it became a sport</h1>
+            <div class="gridpagestyle">
+                <div>
+                    <img class="imagepagestyle" src="images/archerimage.jpg" alt="archerImage">
+                </div>
+                <div class="textbox">
+                    In the modern times, it is seen as a competitive sport and recreational activity,
+                    it came about when it became obsolete in warfare with the advent of gunpowder, which quickly turned into sports.
+                    The first known archery competition was held during the year 1583 and was also featured during the modern Olympic Games in 1900 to 1908 and 1920. 
                 </div>
             </div>
         </div>
@@ -64,8 +77,7 @@
             </div>
             <br>
             <div class="whiteSpace"></div>
-            <br>
-            <b>
+            <div class="boldtext">
                 <h1>Locations</h1>
                 <br>
                 <div class="gridpagestyle">
@@ -109,9 +121,11 @@
                         @25 Seletar West, Farmway 6 Singapore 798036
                     </div>
                 </div>
-                <br>
-            </b>
+                <br><br>
+            </div>
             <div class="textbox">
+                There are more locations in singapore to go for archery, here listed the top 3 locations you could book.
+                <br><br>
                 You can join archery clubs in Singapore by visiting ranges and registering for their short courses,
                 it often come in three levels, beginner, intermediate, and advanced. 
             </div>
@@ -127,7 +141,7 @@
 
             <div class="gridpagestyle">
                 <div>
-                    <iframe class="imagepagestyle" src="https://www.youtube.com/embed/7HGIASAOoa0?si=6ymShZ7Zt2397dGB&amp;start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="imagepagestyle" src="https://www.youtube.com/embed/7HGIASAOoa0?si=6ymShZ7Zt2397dGB&amp;start=14" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="textbox">
                     <br>
@@ -170,29 +184,6 @@
                 </div>
                 <br>
             </div>
-
-
-            <!--
-            Make game screen here.
-
-            Plan:
-            o Bow aiming (Mouse point A to B)
-            o Arrow moves
-            o Arrow Shot
-            o Target
-            o Arrow physic
-            - Different bow and arrow stats
-
-            Vars/Stats:
-            Arrow Position
-            Arrow Speed
-            Bow Power
-            Aim Angle
-            Target Object
-            Accuracy
-            Wind
-            -->
-
         </div>
     </div>
 
@@ -206,12 +197,13 @@ Subtopic: What is archery, how to be an archer and have fun.
 Interactivity: Simulator of using a bow to shot arrow.
 
 
-https://www.youtube.com/watch?v=WSM8cENy9Fo
+//Validator
+https://validator.w3.org/
 https://beautifytools.com/javascript-validator.php
 
 
-
 //Archer Research
+https://www.worldarchery.sport/sport/history#:~:text=Archery%20became%20obsolete%20in%20warfare,to%201908%20and%20in%201920.
 https://en.wikipedia.org/wiki/Archery
 https://www.britannica.com/sports/archery/Equipment
 https://www.hattila.com/en/content/31-a-guide-to-the-different-types-of-bows
@@ -272,8 +264,4 @@ https://stackoverflow.com/questions/23744605/javascript-get-x-and-y-coordinates-
 
 Getting touch position on touch:
 https://stackoverflow.com/questions/41993176/determine-touch-position-on-tablets-with-javascript
-
-
-
-https://icyleon.github.io/webdevA2/simulator.html
 -->

@@ -12,7 +12,6 @@ var currentArrowSpeedX = 0;
 var currentArrowSpeedY = 0;
 var currentGravity = 0.1;
 var currentDrag = 0.99;
-var currentWind = 0;
 var currentAimRotation = 0;
 var targetPosX = 500;
 var targetPosY = 250;
@@ -34,6 +33,42 @@ var settargetposbutton = document.querySelector("#settargetposbutton");
 console.log(allpages);
 hideall();
 show(1);
+
+//FullScreen Controls
+function toggleFullScreen() {
+    var doc = window.document;
+    var docEl = doc.documentElement;
+  
+    var requestFullScreen =
+      docEl.requestFullscreen ||
+      docEl.mozRequestFullScreen ||
+      docEl.webkitRequestFullScreen ||
+      docEl.msRequestFullscreen;
+    var cancelFullScreen =
+      doc.exitFullscreen ||
+      doc.mozCancelFullScreen ||
+      doc.webkitExitFullscreen ||
+      doc.msExitFullscreen;
+  
+    if (
+      !doc.fullscreenElement &&
+      !doc.mozFullScreenElement &&
+      !doc.webkitFullscreenElement &&
+      !doc.msFullscreenElement
+    ) {
+      requestFullScreen.call(docEl);
+    } else {
+      cancelFullScreen.call(doc);
+    }
+  }
+
+  var goFS = document.getElementById('goFS');
+  goFS.addEventListener(
+    'click',
+    function () {
+        toggleFullScreen();
+    }
+  );
 
 //Menu
 hamBtn.addEventListener("click", toggleMenus);
